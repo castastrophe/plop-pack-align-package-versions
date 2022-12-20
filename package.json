@@ -1,0 +1,66 @@
+{
+  "name": "plop-pack-align-package-versions",
+  "version": "1.0.0",
+  "description": "A plop helper for fetching local package versions in a monorepo and updating an existing package",
+  "license": "Apache-2.0",
+  "author": "castastrophe <castastrophe@users.noreply.github.com>",
+  "homepage": "https://github.com/castastrophe/plop-pack-align-package-versions#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castastrophe/plop-pack-align-package-versions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/castastrophe/plop-pack-align-package-versions/issues"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "precommit": "lint-staged",
+    "lint": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "tslib": "^2.4.1"
+  },
+  "peerDependencies": {
+    "plop": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "node-plop": "^0.31.0",
+    "plop": "^3.1.1",
+    "prettier": "^2.8.1",
+    "prettier-package-json": "^2.7.0",
+    "typescript": "^4.9.4"
+  },
+  "keywords": [
+    "actionType",
+    "plop",
+    "plop-pack",
+    "updateDependencies"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=3.0.0"
+  },
+  "lint-staged": {
+    "package.json": [
+      "prettier-package-json --write"
+    ],
+    "src/*.ts": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "yarn@3.3.1"
+}
