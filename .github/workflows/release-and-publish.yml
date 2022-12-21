@@ -13,8 +13,17 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.com/
+      - name: Install dependencies and build 🔧
+        run: yarn install --immutable && yarn build
       # - name: Extract version
       #   id: extract_version
       #   uses: Saionaro/extract-package-version@v1.0.6
@@ -28,3 +37,7 @@ jobs:
           release_name: ${{ format('Release {0}', github.event.inputs.version) }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish package on NPM 📦
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
