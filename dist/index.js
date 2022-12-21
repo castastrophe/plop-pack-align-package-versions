@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'fs/promises';
-import { determinePath, determineFallback, yarnFetchVersion, npmFetchVersion, } from './utilities';
+import { determinePath, determineFallback, yarnFetchVersion, npmFetchVersion, } from './utilities.js';
 export default (plop) => {
     plop.setDefaultInclude({ actionTypes: true });
     plop.setActionType('updateDependencies', async (data, config, plop) => {
