@@ -4,7 +4,7 @@ import {
   determineFallback,
   yarnFetchVersion,
   npmFetchVersion,
-} from './utilities';
+} from './utilities.js';
 import type { NodePlopAPI, CustomActionConfig } from 'node-plop';
 
 export interface UpdateDependenciesActionConfig

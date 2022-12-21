@@ -1,6 +1,6 @@
 {
   "name": "plop-pack-align-package-versions",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A plop helper for fetching local package versions in a monorepo and updating an existing package",
   "license": "Apache-2.0",
   "author": "castastrophe <castastrophe@users.noreply.github.com>",
