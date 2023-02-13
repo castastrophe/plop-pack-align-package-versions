@@ -1480,7 +1480,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-plop@npm:^0.31.0":
+"node-plop@npm:^0.31.0, node-plop@npm:^0.31.1":
   version: 0.31.1
   resolution: "node-plop@npm:0.31.1"
   dependencies:
@@ -1796,20 +1796,20 @@ __metadata:
   linkType: soft
 
 "plop@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "plop@npm:3.1.1"
+  version: 3.1.2
+  resolution: "plop@npm:3.1.2"
   dependencies:
     "@types/liftoff": ^4.0.0
     chalk: ^5.0.1
     interpret: ^2.2.0
     liftoff: ^4.0.0
     minimist: ^1.2.6
-    node-plop: ^0.31.0
+    node-plop: ^0.31.1
     ora: ^6.0.1
     v8flags: ^4.0.0
   bin:
     plop: bin/plop.js
-  checksum: 3ef13673107397c389fb1cb861215a60317a67622121b98221d1f5d448f289a25e9b1f4bb9cbdcb91f28e7339c7583cd21a9738c2bee92602916ede6c04aa848
+  checksum: 97ce8574f4c3921bdc931b5b0b801d1f336372c19e62aaf071483c77e6cfd52eb8d1d6fe5ca0c85482cbf7d5d7af8f1f14de609f3666a525ccd7e571e49e4704
   languageName: node
   linkType: hard
 
